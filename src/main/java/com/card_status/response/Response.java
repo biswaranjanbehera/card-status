@@ -3,6 +3,7 @@ package com.card_status.response;
 import java.sql.Timestamp;
 
 public class Response {
+    private String card_id;
     private Timestamp pickup_card_timestamp;
     private DeliveryExceptionResponse deliveryExceptionResponse;
     private Timestamp returned_timestamp;
@@ -39,6 +40,14 @@ public class Response {
 
     public void setDelivered_card_timestamp(Timestamp delivered_card_timestamp) {
         this.delivered_card_timestamp = delivered_card_timestamp;
+    }
+
+    public String getCard_id() {
+        return card_id;
+    }
+
+    public void setCard_id(String card_id) {
+        this.card_id = card_id;
     }
 
     public String getCurrent_status() {

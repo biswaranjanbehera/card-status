@@ -1,8 +1,10 @@
 package com.card_status.response;
 
+import java.util.List;
+
 public class DeliveryExceptionResponse {
     private int count;
-    private Comments comment ;
+    private List<Comments> comment ;
 
     public int getCount() {
         return count;
@@ -12,11 +14,11 @@ public class DeliveryExceptionResponse {
         this.count = count;
     }
 
-    public Comments getComment() {
+    public List<Comments> getComment() {
         return comment;
     }
 
-    public void setComment(Comments comment) {
+    public void setComment(List<Comments> comment) {
         this.comment = comment;
     }
 }
